@@ -1,4 +1,4 @@
-# PathTracer
+# Path Tracer
 
 Ein selbst entwickelter, schrittweise aufgebauter **Path Tracer**, der sich von einer einfachen Lichtquelle bis zur Unterstützung von komplexen `.obj`-Modellen mit beschleunigtem Rendering entwickelt hat.
 
