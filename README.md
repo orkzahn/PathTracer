@@ -6,11 +6,11 @@ Ein selbst entwickelter, schrittweise aufgebauter **Path Tracer**, der sich von 
 
 ## Funktionalitäten
 
-- Physikalisch basiertes Path Tracing
-- Unterstützung für reflektierende Materialien
+- Path Tracing
+- Reflektierende Materialien
 - Texturierung & lokale Koordinatensysteme
 - Triangle Meshes und OBJ-Import
-- Multithreaded Rendering für mehr Performance
+- Beschleunigung BVH
 
 ---
 
@@ -20,8 +20,7 @@ Ein selbst entwickelter, schrittweise aufgebauter **Path Tracer**, der sich von 
 
 <img src="images/a01-discs.png" width="800"/>
 
-Einstieg ins Projekt: Eine einfache beleuchtete Fläche (Disc) dient als Lichtquelle.  
-Grundlage für erste Lichtberechnungen und Raytracing-Logik.
+Einstieg ins Projekt: Eine einfache Fläche (Disc).
 
 ---
 
@@ -29,8 +28,7 @@ Grundlage für erste Lichtberechnungen und Raytracing-Logik.
 
 <img src="images/a02-spheres.png" width="800"/>
 
-Einführung von Kugeln (Spheres) als grundlegende Geometrien.  
-Szenen wurden komplexer, erste visuelle Tiefe entstand.
+Einführung von Kugeln (Spheres) als einfache Geometrien.  
 
 ---
 
@@ -39,7 +37,6 @@ Szenen wurden komplexer, erste visuelle Tiefe entstand.
 <img src="images/a03-spheres.png" width="800"/>
 
 Erweiterung um **Schattenberechnung** durch Blockierung von Lichtstrahlen.  
-Physikalisch plausiblere Szenendarstellung.
 
 ---
 
@@ -48,7 +45,6 @@ Physikalisch plausiblere Szenendarstellung.
 <img src="images/a04-image.png" width="800"/>
 
 Erste Oberflächentexturen mithilfe von UV-Mapping.  
-Farben und Materialien wurden realitätsnäher.
 
 ---
 
@@ -70,12 +66,11 @@ Unterstützung für spiegelnde/reflektierende Oberflächen über rekursive Strah
 
 ---
 
-### 7. Parallelisierung
+### 7. Beschleunigung
 
 <img src="images/a07-image.png" width="800"/>
 
-**Multithreading** beschleunigt das Rendern erheblich.  
-Effizientere Ausnutzung moderner Mehrkernprozessoren.
+**BVH** beschleunigt das Rendern erheblich.  
 
 ---
 
@@ -84,8 +79,7 @@ Effizientere Ausnutzung moderner Mehrkernprozessoren.
 <img src="images/a08-image.png" width="800"/>
 <img src="images/a09-image_mc.png" width="800"/>
 
-Volle Unterstützung für Triangle Meshes und den Import von `.obj`-Dateien.  
-Realistische 3D-Modelle können gerendert werden – der Renderer unterstützt jetzt komplexe Geometrien.
+Der Import von .obj-Dateien ist jetzt möglich und sie können gerendert werden.
 
 ---
 
